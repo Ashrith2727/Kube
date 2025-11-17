@@ -1,0 +1,14 @@
+<html>
+<body>
+<h2>Messages</h2>
+<ul>
+    {% for m in messages %}
+    <li>{{ m[0] }}</li>
+    {% endfor %}
+</ul>
+<form action="/add" method="post">
+    <input type="text" name="message" placeholder="Enter message" />
+    <button type="submit">Add</button>
+</form>
+</body>
+</html>
